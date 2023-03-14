@@ -1,0 +1,95 @@
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 7rem;
+}
+
+
+.footer_container {
+  max-height: 600px;
+  margin: 5 auto;
+}
+
+
+footer a {
+  color: rgb(11, 116, 221);
+  text-shadow: 2px 2px 2px rgb(49, 49, 49);
+  font-size: 20px;
+}
+
+footer a:hover {
+  color: rgb(143, 5, 151);
+  text-shadow: 2px 2px 2px rgb(9, 134, 237);
+}
+
+.hq_logo7{
+width: 20rem;
+height:10rem;
+margin: auto;
+}
+
+.footer__logo {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
+  filter:invert(100%)
+}
+
+.permalinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto 3rem;
+  border: 2px solid rgb(190, 21, 237);
+  outline: 2px solid rgba(51, 51, 234, 0.802);
+  outline-offset: 2px;
+  box-shadow: 2px 2px 32px rgb(230, 28, 230) ;
+  margin-bottom: 25px;
+  
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+ 
+}
+
+.footer__socials a {
+  background: var(--color-bg);
+  color: rgb(0, 119, 255);
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  border: 1px solid transparent;
+  box-shadow: 2px 2px 22px rgb(159, 7, 209);
+
+}
+
+.footer__socials a:hover {
+  background: transparent;
+  color: rgb(251, 0, 255);
+  box-shadow: 2px 2px 12px rgb(0, 85, 255);
+}
+
+.footer__copyright {
+  color:aliceblue;
+  background: linear-gradient(rgb(0, 0, 0) 8%,#990affbe 35% , #000000e4 95% );
+  width: 101%;
+  margin-top: 90px;
+
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  .permalinks {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer__socials {
+    margin-bottom: 2.6rem;
+  }
+}

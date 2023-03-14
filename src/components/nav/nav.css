@@ -1,0 +1,76 @@
+nav {
+  display: flex;
+  background-image: url("../../assets/01.avif");
+  background-size: 15%;
+  width: 100%;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  transform: translateX(-50%);
+  display: flex;
+  border-radius: 5px;
+  backdrop-filter: blur(15px);
+  box-shadow: 3px 5px 5px rgb(0, 106, 93);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  transition: width 1s ease-in-out;
+  filter: hue-rotate(40deg);
+}
+
+.hqlogo{
+  width: 120px;
+  margin-left: -120px;
+  filter: hue-rotate(-100deg);
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: rgb(1, 90, 101);
+  text-decoration: none;
+  transition: color 0.1s ease-in-out;
+  background: rgba(255, 255, 255, 0.758);
+  padding: 0.9rem;
+  border-radius: 12%;
+  font-size: 2rem;;
+  box-shadow: 2px 2px 12px rgb(0, 162, 255);
+}
+.react-icon {
+  outline: 1.5px solid rgba(0, 0, 0, 0.67);
+  outline-offset: 2px;
+  background-color: transparent;
+  border-radius: 25%;
+  box-shadow: 0px 0px 15px rgb(28, 198, 255);
+  padding: 2px;
+}
+
+
+
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: rgb(255, 255, 255);
+}
+
+nav a.active {
+  background: black;
+  color: lightskyblue;
+}
+
+h6{
+  border: 1px solid red;
+  z-index: 3;
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    height: 60px;
+  }
+}

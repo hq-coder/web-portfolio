@@ -1,0 +1,142 @@
+.experience{
+  justify-content: center;
+
+}
+
+
+
+.experience__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+margin-top: 100px;
+margin-bottom: 50px;
+  position: relative;
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  overflow-x: hidden;
+
+}
+
+.experience__container > ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  background-image: url("../../assets/walkingcode.gif");
+  animation: move-right 20s linear infinite;
+  background-repeat: no-repeat;
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.certificate {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+
+.certificate img {
+  max-width: 250px;
+  height: auto;
+  filter: sepia(70%) opacity(0.8) invert(100%);
+  box-shadow: 2px 0px 5px rgb(0, 0, 0);
+  margin-right: 50px;
+}
+
+
+.certificate img:hover {
+  transform: scale(1.6);
+  z-index: 3;
+
+}
+
+.certificate img:last-child {
+  margin-right: 0;
+}
+
+
+
+
+
+.experience__container > div h4 {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 23px rgb(14, 138, 255);
+  font-size: 18px;
+  background-color: rgba(27, 6, 95, 0.63);
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px rgb(162, 0, 187);
+
+}
+
+.experience__container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: rgb(40, 124, 250);
+  text-shadow: 1px 1px 5px rgb(0, 0, 0);
+  border: 2px solid black;
+  width: 150px;
+  margin-left: 100px;
+  box-shadow: 0px 0px 15px white;
+  border-radius: 3px;
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+  height:325px;
+}
+
+.experience__details {
+  display: flex;
+  gap: 1rem;
+}
+
+.experience__details-icon {
+  margin-top: 6px;
+  color: rgb(15, 86, 200);
+  font-size: 20px;
+  
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+  }
+
+  .experience__container > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .experience__content {
+    padding: 1rem;
+  }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  .experience__container {
+    gap: 1rem;
+  }
+
+  .experience__container > div {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}

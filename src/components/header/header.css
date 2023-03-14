@@ -1,0 +1,220 @@
+header {
+  height: 120vh;
+  padding-top: 2rem;
+  border-radius: 5px;
+  background-image: url(../../assets/hq-coder-logo1.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  opacity: 0.7; /* This will set the opacity to 70% */
+}
+
+.me-name {
+height:50vh;
+width: 70vw;
+margin-left: 100px;
+  
+}
+
+h1:hover {
+  transform: rotate(360deg);
+  
+}
+
+
+.headerh51{
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 13px rgb(177, 58, 250),4px 5px 12px rgb(22, 32, 98);
+  letter-spacing: 10px;
+  opacity: 80%;
+  outline: 2px solid rgba(51, 51, 234, 0.802);
+  outline-offset: 2px;
+  box-shadow: 2px 2px 32px rgb(230, 28, 230) ;
+  
+}
+
+
+h2 {
+  font-size: 30px;
+    margin-left: 100px;
+    animation: slide-right 2s ease-in forwards;
+    text-shadow: 1px 2px 15px rgb(8, 144, 255), 2px 2px 13px rgb(177, 58, 250);
+    color: white;
+    padding: 10px;
+  }
+  
+  @keyframes slide-right {
+    from {
+      margin-left: -100vw; /* start the animation with the element off screen */
+    }
+    to {
+      margin-left: 40%; /* end the animation with the element in its original position */
+    }
+  }
+  
+
+
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/* =============== CTA ============== */
+.cta {
+  margin-top: 2.5rem;
+  height: 3.2rem;
+  display: flex;
+  gap: 40rem;
+  justify-content: center;
+  text-shadow: 1px 1px 10px rgb(223, 173, 8);
+  background-color:transparent;
+  border-radius: 5px;
+  font-size: 20px;
+ 
+
+}
+
+/* =============== HEADER SOCIALS ============== */
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  left: 2%;
+  bottom: 3rem;
+  font-size: 1.5rem;
+  top:20%;
+
+  
+}
+
+.social-icon{
+  color: rgb(0, 121, 249);
+  height: 5rem;
+  font-size: 2.0em;
+
+
+}
+.social-icon svg {
+  box-shadow: 0px 2px 14px rgba(193, 7, 255, 0.705);
+  border-radius: 2px;
+}
+
+
+.social-icon:hover{
+color: rgb(191, 0, 255);
+}
+
+
+.social-icon2{
+  color: rgb(0, 121, 249);
+  height: 5rem;
+  font-size: 2.0em;
+ 
+
+
+}
+.social-icon2 svg {
+  box-shadow: 0px 2px 14px rgba(193, 7, 255, 0.705);
+  border-radius: 12px;
+}
+
+
+.social-icon2:hover{
+  color: rgb(191, 0, 255);
+ 
+}
+
+
+.hq_logo{
+ position: fixed;
+ top: 40px;
+ left: 0;
+ width: 250px;
+height:250px;
+margin: auto;
+z-index: -2;
+filter:invert(100%);
+}
+
+.topbuttons{
+  color:rgb(255, 255, 255);
+  text-shadow: 2px 2px 13px rgb(177, 58, 250),0px 0px 30px rgb(0, 94, 171);
+}
+
+
+.hq_logo2{
+  position: fixed;
+  top: 40px;
+  right: 0;
+  width: 250px;
+ height:250px;
+ z-index: -2;
+ filter:invert(100%);
+}
+
+/* =============== ME ============== */
+.me {
+
+  width: 45rem;
+  height: 35rem;
+  position:absolute;
+  top:0%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 0px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+.me-pic{
+  background-color: transparent;
+  position: absolute;
+  height:200%;
+  width: 120%;
+  top:-40%;
+}
+
+
+.text-light{
+font-weight: 700;
+text-shadow: 5px 5px 5px white;
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
+  }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+padding-top: 4rem;
+  }
+
+  .header__socials
+ {
+    display: none;
+  }
+
+
+  .me {
+    width: 40%;
+    max-width: 20rem;
+    margin-top: 2.5rem;
+    justify-content: center;
+  }
+
+  .cta {
+    margin-top: 1.7rem;
+    gap: 1rem;
+  }
+}
