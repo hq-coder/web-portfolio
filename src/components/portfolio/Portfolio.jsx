@@ -4,8 +4,6 @@ import IMG1 from '../../assets/browsergame.png'
 import IMG2 from '../../assets/pokemonapp.png'
 import IMG3 from '../../assets/uiux2.jpeg'
 import IMG4 from '../../assets/uiux-3.jpeg'
-import IMG5 from '../../assets/Smart home Gateway_3.jpeg'
-import IMG6 from '../../assets/graph1.jpeg'
 import { GoLogoGithub } from 'react-icons/go'
 import { BsPlayBtnFill } from 'react-icons/bs'
 
