@@ -2,7 +2,6 @@ import React from 'react'
 import './contact.css'
 import {MdEmail} from 'react-icons/md'
 import {RxLinkedinLogo} from 'react-icons/rx'
-import {IoLogoWhatsapp} from 'react-icons/io'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
 
