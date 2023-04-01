@@ -53,7 +53,7 @@ const Header = () => {
     <header id='header'>
       <img className="me-name" src={MyNameScript} alt="myname" />
       <div className="container header__container">
-        <h5 className="headerh51">{'<Software Developer />'}</h5>
+        <h5 className="headerh51">{'Software Developer'}</h5>
         <br />
         <CTA />
         <HeaderSocial />

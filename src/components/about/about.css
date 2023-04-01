@@ -3,16 +3,14 @@
   flex-direction: row;
   grid-template-columns: 45% 55%;
   gap: 5%;
- height:100%;
- overflow: visible;
+  height:100%;
+  overflow: visible;
 }
 
-
-#about{
+#about {
   margin-top: 10%;
   display: flex;
   flex-direction: column;
-
 }
 
 .about__me {
@@ -20,43 +18,23 @@
   width: 50%;
   aspect-ratio: 1/1;
   border-radius: 25rem;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    #08acf1,
-    transparent
-  );
+  background: linear-gradient(45deg, transparent, #08acf1, transparent);
   display: grid;
   place-items: center;
   margin-left: 50px;
   background-image: url(../../assets/matrix-greenish.gif);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
-
 .about__me:hover {
-  background: linear-gradient(
-    45deg,
-    #08acf1,
-   transparent,
-    #08acf1
-  );
+  background: linear-gradient(45deg, #08acf1, transparent, #08acf1);
   background-image: url(../../assets/matrix-greenish.gif);
   filter: hue-rotate(120deg);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 90%;
 }
-
-
-
-
-
-
-
-
 
 p {
   letter-spacing: 1px;
@@ -80,17 +58,15 @@ p {
   grid-template-columns: repeat(2, 1fr);
   gap: .5rem;
   height: 100%;
-
 }
 
 .about__cards img {
-border-radius: 25px;
-height: 900px;
-width: 100%;
-
+  border-radius: 25px;
+  height: 900px;
+  width: 100%;
 }
 
-h6{
+h6 {
   color: rgb(69, 69, 69);
   text-shadow: 2px 2px 2px rgb(3, 150, 199);
   margin-left: 20px;
@@ -98,14 +74,14 @@ h6{
 }
 
 .about__card:hover {
-  background: linear-gradient( #213e7ed2 35%,#000000af 65%  );
-  box-shadow: 3px 3px 20px rgb(15, 247, 81) ;
+  background: linear-gradient(#213e7ed2 35%,#000000af 65%);
+  box-shadow: 3px 3px 20px rgb(15, 247, 81);
   border: 1px solid rgb(0, 140, 255);
   cursor:default
 }
 
 .about__icon {
-  margin-top:150%;
+  margin-top: 150%;
   background-color: transparent;
   color: rgb(81, 81, 81);
   font-size: 2rem;
@@ -114,92 +90,37 @@ h6{
 }
 
 .about__card h5 {
-  
   background-color: rgba(8, 72, 124, 0.295);
   outline: 1px solid rgb(17, 255, 0);
   color: rgb(24, 24, 24);
   text-shadow: 1px 1px 10px rgb(0, 208, 255);
-  box-shadow: 2px 2px 2px lime;
-  border-radius: 50px;
- width: 70%;
- margin-left: 40px;
+  box-shadow: 2px 2px
 }
 
+/* Media Queries */
 
-
-
-
-
-
-/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .about__container {
-    grid-template-columns: 1fr;
-    gap: 0;
+    padding: 1rem;
   }
-
+  
   .about__me {
-    width: 50%;
-    margin: 2rem auto 4rem;
+    margin-left: 0;
+    width: 100%;
   }
-
-}
-
-
-.nextbutton {
-  width: 41px;
-  height: 41px;
-  border-radius: 50%;
-  background-color: #38b4e9;
-  color: white;
-  font-size: 41px;
-  margin-left: 200px;
-  box-shadow: 0px 0px 18px rgb(134, 154, 255);
-  transition: all 0.3s ease-in-out;
-  animation:change-colors 5s infinite;
-}
-
-@keyframes change-colors {
-  0% {
-    background-color: #6900f2;
-  }
-  50% {
-    background-color: #0077b6;
-  }
-  100% {
-    background-color: #ab38e9;
-  }
-}
-
-.nextbutton:hover {
-  background-color: #0077b6;
-  cursor: pointer;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-
-
-/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
-@media screen and (max-width: 600px) {
-  .about__me {
-    width: 65%;
-    margin: 0 auto 3rem;
-  }
-
+  
   .about__cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
+    margin-top: 1rem;
   }
-
+  
+  .about__icon {
+    margin-top: 50%;
+    background-color: transparent;
+    color: rgb(81, 81, 81);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+  }
 }

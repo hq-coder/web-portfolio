@@ -2,16 +2,13 @@ header {
   height: 120vh;
   padding-top: 2rem;
   border-radius: 5px;
-  background-image: url(../../assets/hq-coder-logo1.png);
-  background-repeat: no-repeat;
-  background-position: center bottom;
   opacity: 0.7; /* This will set the opacity to 70% */
 }
 
 .me-name {
 height:50vh;
 width: 70vw;
-margin-left: 100px;
+margin-left: 10px;
   
 }
 
@@ -186,35 +183,95 @@ font-weight: 700;
 text-shadow: 5px 5px 5px white;
 }
 
+/* ================ MEDIA QUERIES (LARGE DEVICES) ================= */
+@media screen and (min-width: 1025px) {
+  header {
+    max-height: 28vh;
+  }
+}
+
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
   header {
     height: 68vh;
   }
+
+  .me {
+    width: 100%;
+    height: 50%;
+    max-width: 15rem;
+    margin-top: 2.5rem;
+    justify-content: center;
+  }
+  .hq_logo2{
+    position: fixed;
+    top: 50px;
+    right: 5%;
+    max-width: 50px;
+   max-height:100px;
+   z-index: -2;
+   filter:invert(100%);
+}
+.me-name {
+  max-height:20vh;
+  max-width: 80vw;
+    
+  }
+
+  .headerh51{
+    max-height: 9vh;
+      font-size: .6rem; 
+}
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .21rem;
+  bottom: 1rem;
+  font-size: .5rem;
+  top:20%;
+  max-width: 10px;
+
+  
+}
+
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
   header {
     height: 100vh;
-padding-top: 4rem;
+    padding-top: 4rem;
   }
 
-  .header__socials
- {
+  .header__socials {
     display: none;
   }
 
-
-  .me {
-    width: 40%;
-    max-width: 20rem;
-    margin-top: 2.5rem;
+  .me-pic {
+    width: 100%;
+    max-width: 15rem;
+    max-height: 25rem;
+    margin-top: 8rem;
     justify-content: center;
   }
 
   .cta {
     margin-top: 1.7rem;
-    gap: 1rem;
+    gap: 13rem;
+    font-size: .8em;
+  }
+
+  .header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .11rem;
+    bottom: 1rem;
+    font-size: .5rem;
+    top:20%;
+    max-width: 15px;
+  
+    
   }
 }

@@ -124,10 +124,22 @@ img {
   padding: 20px;
 }
 
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    max-width: none;
+  }
+}
+
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+
 @media screen and (max-width: 600px) {
   .container {
-    width: var(--container-width-sm);
+    width: 100%;
+    max-width: none;
   }
 
   section > h2 {
