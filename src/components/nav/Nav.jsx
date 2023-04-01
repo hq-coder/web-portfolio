@@ -20,9 +20,7 @@ const Nav = () => {
         document.querySelector('nav').style.opacity = '.2';
       } else {
         setNavWidth('100%');
-       {
-          document.querySelector('nav').style.opacity = '1';
-        }
+        document.querySelector('nav').style.opacity = '1';
       }
       setScrollPos(currentScrollPos);
     };
@@ -32,15 +30,14 @@ const Nav = () => {
     };
   }, [scrollPos, navWidth]);
 
-
-
   return (
     <nav style={{ width: navWidth }}>
-      <img className= "hqlogo" src={hqlogo} atl="hqlogo"/>
-       <a
+      <img className="hqlogo" src={hqlogo} atl="hqlogo" />
+      <a
         href="#header"
         onClick={() => setActiveNav('#header')}
-        className={activeNav === '#header' ? 'active' : ''}>
+        className={activeNav === '#header' ? 'active' : ''}
+      >
         <MdHome className='react-icon'/>
       </a>
       <a

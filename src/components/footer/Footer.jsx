@@ -9,10 +9,10 @@ const Footer = () => {
   return (
     <footer className='footer_container'>
   
-      <a href="#" className='footer__logo'><img className="hq_logo7" src={logo} alt="hq-coder logo" /></a>
+      <a href="#header" className='footer__logo'><img className="hq_logo7" src={logo} alt="hq-coder logo" /></a>
 
       <ul className='permalinks'>
-        <li><a href="#">Home</a></li>
+        <li><a href="#header">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#portfolio">Projects</a></li>

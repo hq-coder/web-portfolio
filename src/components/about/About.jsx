@@ -47,7 +47,7 @@ const About = () => {
       <div className="containers about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={images[imageIndex]} alt="About Image" />
+            <img src={images[imageIndex]} />
           </div>
         </div>
         <div className="laptop-background">
@@ -55,7 +55,7 @@ const About = () => {
           </div>
         </div>
         <div className="about__cards">
-          <img src={elonConvoImg} alt="elonconvo" />
+          <img src={elonConvoImg} />
           <button className="nextbutton" onClick={toggleElonConvoImg}>
             {elonConvoImg === elonconvo1 ? <ImNext /> : <IoPlaySkipBackCircleSharp />}
           </button>
