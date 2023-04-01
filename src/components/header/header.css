@@ -36,7 +36,7 @@ h1:hover {
 
 h2 {
   font-size: 30px;
-    margin-left: 100px;
+    margin-left: 200px;
     animation: slide-right 2s ease-in forwards;
     text-shadow: 1px 2px 15px rgb(8, 144, 255), 2px 2px 13px rgb(177, 58, 250);
     color: white;
@@ -279,6 +279,7 @@ text-shadow: 5px 5px 5px white;
   }
   h2 {
     font-size: 15px;
+    margin-left: -200px;
    
 }
 }

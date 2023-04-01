@@ -72,9 +72,8 @@ textarea {
   resize: none;
   color: rgb(255, 255, 255);
   text-shadow: 0px 0px 5px rgb(255, 0, 225);
-  font-size:18px;
-  opacity: 50%;
-  box-shadow: 2px 2px 5px rgb(0, 123, 255);
+  font-size:12px;
+  box-shadow: 2px 2px 15px rgb(0, 123, 255);
 }
 
 input:hover {
@@ -87,7 +86,7 @@ textarea:hover {
 
 .messege-button{
   width: 30%;
-height: 7%;
+height: 17%;
 margin-left: 30%;
 border-radius: 5px;
 background-color: black;
@@ -98,14 +97,47 @@ box-shadow: 0px 0px 20px rgb(33, 111, 255);
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
   .container.contact__container {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
   }
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
   .container.contact__container {
-    width: var(--container-width-sm);
+    max-width: 200%;
   }
+  .messege-button{
+  max-width: 100%;
+  max-height: 12%;
+  margin-left: 30%;
+  border-radius: 5px;
+  background-color: black;
+  font-size: 10px;
+  color: rgb(177, 95, 255);
+  box-shadow: 0px 0px 20px rgb(33, 111, 255);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  
+  }
+  
+  input,
+  textarea {
+    max-width: 200%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background:rgb(0, 0, 0);
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(255, 0, 225);
+    font-size:12px;
+    box-shadow: 2px 2px 15px rgb(0, 123, 255);
+  }
+  
 }
