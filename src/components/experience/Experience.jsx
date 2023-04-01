@@ -75,13 +75,6 @@ const Experience = () => {
               </div>
             </article>
             <article className='experience__details'>
-              <MdDownloading className='experience__details-icon' />
-              <div>
-                <h4>Mongo/Postgre</h4>
-        
-              </div>
-            </article>
-            <article className='experience__details'>
               <VscLoading className='experience__details-icon' />
               <div>
                 <h4>Cyber Security</h4>
