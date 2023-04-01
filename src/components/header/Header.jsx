@@ -5,7 +5,7 @@ import logo from '../../assets/hq-coder-logo1.png';
 import ME from '../../assets/melaptopwhite.png';
 import ME2 from '../../assets/melaptopwhite2.png';
 import MyNameScript from '../../assets/myname.PNG';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Header = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -60,8 +60,7 @@ const Header = () => {
         <div className="me">
           <img className="me-pic" src={ME} alt="me" />
         </div>
-
-        <img className="hq_logo2" src={logo} alt="hq-coder logo" />
+      <img className="hq_logo2" src={logo} alt="hq-coder logo" />
       </div>
     </header>
   );
