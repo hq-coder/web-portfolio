@@ -74,6 +74,11 @@ textarea {
   text-shadow: 0px 0px 5px rgb(255, 0, 225);
   font-size:12px;
   box-shadow: 2px 2px 15px rgb(0, 123, 255);
+  
+}
+.messegebox{
+  border:solid 2px white;
+  box-shadow: 2px 2px 12px rgb(69, 202, 255);
 }
 
 input:hover {
