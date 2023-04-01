@@ -25,12 +25,12 @@ const Contact = () => {
           <article className="contact__option">
             <MdEmail className='contact__option-icon'/>
             <h4>Email</h4>
-            <a href="mailto:hanselquiroz@yahoo.com" target="_blank">Send a message</a>
+            <a href="mailto:hanselquiroz@yahoo.com" target="_blank" rel="noopener noreferrer">Send a message</a>
           </article>
           <article className="contact__option">
             <RxLinkedinLogo className='contact__option-icon'/>
             <h4>Linkedin</h4>
-            <a href="https://www.linkedin.com/in/hanselquiroz/" target="_blank">Send a message</a>
+            <a href="https://www.linkedin.com/in/hanselquiroz/" target="_blank" rel="noopener noreferrer">Send a message</a>
           </article>
       
         </div>

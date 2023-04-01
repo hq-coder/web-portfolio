@@ -32,7 +32,7 @@ const Nav = () => {
 
   return (
     <nav style={{ width: navWidth }}>
-      <img className="hqlogo" src={hqlogo} atl="hqlogo" />
+      <img className="hqlogo" src={hqlogo} />
       <a
         href="#header"
         onClick={() => setActiveNav('#header')}
