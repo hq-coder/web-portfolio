@@ -62,7 +62,7 @@ html {
 div .App{
 
   background: linear-gradient(65deg, rgb(0, 0, 0) 20%, rgb(47, 0, 75) 30%, #000000 80%);
-  background-size: cover;
+  background-size: cover;  
 }
 
 ::-webkit-scrollbar {

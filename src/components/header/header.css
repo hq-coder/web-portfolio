@@ -1,18 +1,18 @@
 header {
+  position: relative;
   height: 120vh;
   padding-top: 2rem;
   border-radius: 5px;
   background-image: url(../../assets/hq-coder-logo1.png);
   background-repeat: no-repeat;
   background-position: center top;
-  opacity: 0.9; /* This will set the opacity to 70% */
+  opacity: 0.9;
 }
 
 .me-name {
 height:50vh;
 width: 70vw;
 margin-left: 100px;
-  
 }
 
 h1:hover {
@@ -45,10 +45,10 @@ h2 {
   
   @keyframes slide-right {
     from {
-      margin-left: -100vw; /* start the animation with the element off screen */
+      margin-left: -100vw; 
     }
     to {
-      margin-left: 40%; /* end the animation with the element in its original position */
+      margin-left: 40%;
     }
   }
   
@@ -174,7 +174,7 @@ filter:invert(100%);
 
 .me-pic{
   background-color: transparent;
-  position: absolute;
+  position: relative;
   height:200%;
   width: 120%;
   top:-40%;
@@ -186,12 +186,7 @@ font-weight: 700;
 text-shadow: 5px 5px 5px white;
 }
 
-/* ================ MEDIA QUERIES (LARGE DEVICES) ================= */
-@media screen and (min-width: 1025px) {
-  header {
-    max-height: 28vh;
-  }
-}
+
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
